@@ -1,0 +1,6 @@
+tm_dynamic "import" {
+  for_each = global.myimports
+  content {
+    source = import.value
+  }
+}
